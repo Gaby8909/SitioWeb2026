@@ -92,3 +92,30 @@ section { padding: 80px 20px; text-align: center; }
     .about-grid { grid-template-columns: 1fr; text-align: center; }
     .header-content h1 { font-size: 2.5rem; }
 }
+
+/* Ajustes para móviles (Redmi y similares) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem !important; /* Letras de cabecera más pequeñas */
+        line-height: 1.2;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-whatsapp {
+        font-size: 1rem; /* Botón de WhatsApp más ajustado */
+        padding: 12px 20px;
+        width: 90%; /* Que no se salga de la pantalla */
+    }
+
+    .container {
+        padding: 20px 15px; /* Más margen a los lados */
+    }
+}
