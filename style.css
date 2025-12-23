@@ -20,8 +20,7 @@ nav {
 /* Header Dinámico */
 header {
     height: 550px; display: flex; flex-direction: column; justify-content: center; align-items: center;
-    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
-                url('images.unsplash.com');
+    background: linear-gradient(rgb(43 82 175 / 80%), rgba(15, 23, 42, 0.8)), url(images.unsplash.com);
     background-size: cover; background-position: center; color: white; text-align: center; padding: 20px;
 }
 
@@ -88,7 +87,7 @@ section { padding: 80px 20px; text-align: center; }
     background: #f0f9ff; /* Cambia a un azul muy suave */
     border-color: #0ea5e9; /* El borde se vuelve azul brillante */
     transform: translateY(-5px); /* La caja sube un poquito */
-    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.1); /* Sombra azulada */
+    box-shadow: 0 10px 20px rgba(100, 144, 164, 0.1); /* Sombra azulada */
 }
 
 /* Efecto opcional: Que el título de la experiencia también cambie de color al resaltar la caja */
