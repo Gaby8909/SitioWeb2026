@@ -73,6 +73,30 @@ section { padding: 80px 20px; text-align: center; }
     width: 16px; height: 16px; background: #38bdf8; border: 4px solid #fff; border-radius: 50%;
 }
 .timeline-content { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+/* Estado normal de la caja de experiencia */
+.timeline-content {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.4s ease; /* Esto hace que el cambio sea suave */
+    cursor: default;
+}
+
+/* EFECTO DINÁMICO: Cuando pasas el cursor por encima */
+.timeline-content:hover {
+    background: #f0f9ff; /* Cambia a un azul muy suave */
+    border-color: #0ea5e9; /* El borde se vuelve azul brillante */
+    transform: translateY(-5px); /* La caja sube un poquito */
+    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.1); /* Sombra azulada */
+}
+
+/* Efecto opcional: Que el título de la experiencia también cambie de color al resaltar la caja */
+.timeline-content:hover h3 {
+    color: #0ea5e9;
+    transition: 0.3s;
+}
+
 
 /* WhatsApp Intermitente */
 .btn-whatsapp {
