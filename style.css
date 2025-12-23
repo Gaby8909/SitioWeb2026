@@ -119,3 +119,29 @@ section { padding: 80px 20px; text-align: center; }
         padding: 20px 15px; /* Más margen a los lados */
     }
 }
+/* Corrección para que nada se descuadre en móviles */
+* {
+    box-sizing: border-box; /* Evita que los elementos se salgan del ancho */
+}
+
+body {
+    overflow-x: hidden; /* Evita el movimiento lateral feo en móviles */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem !important; /* Reduce el título principal */
+    }
+    
+    .about-grid {
+        display: flex;
+        flex-direction: column; /* Pone la foto arriba y el texto abajo */
+        align-items: center;
+    }
+
+    .btn-whatsapp {
+        width: 100%; /* El botón se adapta al ancho del móvil */
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
