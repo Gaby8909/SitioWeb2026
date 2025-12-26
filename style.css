@@ -49,7 +49,39 @@ header {
 
 /* Contenedores */
 .container { max-width: 1050px; margin: 60px auto; padding: 20px; }
-section { padding: 80px 20px; text-align: center; }
+/*section { padding: 80px 20px; text-align: center; }*/
+/* Estilo visual para el título Mi Trayectoria */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    color: #1e293b; /* Azul oscuro profesional */
+    letter-spacing: -1px;
+}
+
+/* El degradado en el texto (Solo en navegadores modernos) */
+.section-title {
+    background: linear-gradient(90deg, #1e293b, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* La línea decorativa debajo del título */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 6px;
+    background: #0ea5e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(14, 165, 233, 0.3);
+}
+
 
 /* Sobre Mí con Efecto Foto */
 .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: center; text-align: left; }
@@ -208,6 +240,35 @@ section { padding: 80px 20px; text-align: center; }
     }
     .stat-card {
         padding: 20px;
+    }
+}
+
+/* Estilo visual para los H3 de habilidades */
+.skill-item h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px; /* Espacio para la barrita lateral */
+    
+    /* Degradado igual al H2 */
+    background: linear-gradient(90deg, #1e293b, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    display: inline-block;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 40px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* En móvil se pone uno debajo de otro */
     }
 }
 
