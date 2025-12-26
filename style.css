@@ -271,4 +271,48 @@ header {
         grid-template-columns: 1fr; /* En móvil se pone uno debajo de otro */
     }
 }
+/* Centrado perfecto del botón de WhatsApp */
+.whatsapp-container {
+    display: flex;
+    justify-content: center; /* Lo centra horizontalmente */
+    align-items: center;     /* Lo centra verticalmente */
+    padding: 40px 0;         /* Le da aire por arriba y por abajo */
+    width: 100%;             /* Ocupa todo el ancho para poder centrar */
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;               /* Espacio entre el icono del café y el texto */
+    text-align: center;
+}
+/* Alineación total de la sección de contacto */
+#contacto {
+    display: flex;
+    flex-direction: column; /* Pone los elementos en fila vertical */
+    align-items: center;    /* Centra todo horizontalmente */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contacto-texto {
+    max-width: 600px;
+    margin-bottom: 30px; /* Separa el texto del botón */
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+.whatsapp-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #0ea5e9;
+    min-height: 1.5em; /* Evita que la página "salte" al aparecer el texto */
+}
 
