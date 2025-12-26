@@ -8,14 +8,38 @@
 body { background-color: #f8fafc; color: #334155; line-height: 1.6; }
 
 nav {
-    display: flex; justify-content: space-around; align-items: center;
-    background: #1e293b; height: 70px; color: white;
-    position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    background: #1e293b; 
+    height: 80px; /* Aumentamos un poco la altura para que respire */
+    color: white;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.nav-links { display: flex; list-style: none; }
-.nav-links li a { color: white; text-decoration: none; margin: 0 15px; font-weight: 500; transition: 0.3s; }
-.nav-links li a:hover { color: #38bdf8; }
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+    align-items: center;
+}
+
+.nav-links li a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; /* Más separación entre ellos */
+    font-weight: 600; /* Letra un poco más gruesa */
+    font-size: 1.2rem; /* ¡ESTA ES LA CLAVE! Tamaño aumentado para legibilidad */
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+}
+
+.nav-links li a:hover { 
+    color: #38bdf8; 
+    transform: scale(1.1); /* Un pequeño efecto de crecimiento al pasar el ratón */
+}
 
 /* Header Dinámico */
 header {
@@ -175,7 +199,8 @@ header {
         padding: 20px 15px; /* Más margen a los lados */
     }
 }
-/* --- DASHBOARD DE RESULTADOS (INNOVADOR) --- */
+/* --- 
+DASHBOARD DE RESULTADOS (INNOVADOR) --- */
 
 /* Contenedor principal para que no se pegue a los bordes */
 .stats-section {
@@ -225,6 +250,7 @@ header {
     margin-bottom: 8px;
     font-weight: 800;
 }
+
 
 .stat-card p {
     color: #475569;
@@ -316,3 +342,46 @@ header {
     min-height: 1.5em; /* Evita que la página "salte" al aparecer el texto */
 }
 
+
+/* Contenedor para centrar el botón */
+.cv-download {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+/* Estilo elegante y minimalista para el botón de CV */
+.btn-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0ea5e9; /* Azul de tu marca */
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #0ea5e9; /* Borde elegante */
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.1);
+    letter-spacing: 0.5px;
+}
+
+/* Efecto Hover: Se rellena de color suavemente */
+.btn-cv:hover {
+    background: #0ea5e9;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
+}
+
+/* Icono dentro del botón */
+.btn-cv span {
+    font-size: 1.3rem;
+}
+#contacto {
+    padding-top: 20px;    /* Reducimos el espacio antes de "¿Hablamos?" */
+    margin-top: 0;
+}
